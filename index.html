@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kode+Mono:wght@400..700&family=Major+Mono+Display&family=Merienda:wght@300..900&family=Play:wght@400;700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+            <!-- Banner Section -->
+            <img src="./assets/images/profile/ProfileBanner.png" alt="Banner Photo" id="banner">
+
+        <section id="home">
+            <p id="founder">Founder and CEO at Inora Labs</p>
+            <p id="roles">Python Developer | ML Engineer | Data Scientist | Automation Engineer</p>
+        </section>
+
+        <section id="about">
+            <h2><B>About Me</B></h2>
+            <div class="about-card">
+                <h3>Introduction</h3>
+                <p id="introtext">Rooted in the wisdom imparted by my parents, I've developed a versatile skill set characterized by adaptability and decisive leadership. My father's extensive technical expertise and my mother's boundless creativity have significantly influenced my approach to challenges, instilling in me a confidence that remains unshaken. Whether working within a team or independently, I am known for my ability to take decisive action, foster unity, and deliver impactful results. This combination of resilience and leadership ensures that I thrive in dynamic environments and consistently exceed expectations.</p>
+                <p id="introtext">I invite you to connect with me to explore and collaborate on groundbreaking projects, or simply share insights and knowledge. Together, let's shape the future of technology and drive transformative change.</p>
+            </div>
+            <script src="/assets/js/script2.js"></script>
+        </section>
+        
+        
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="project-header" onclick="toggleDetails('project1-details')">
+                        <img src="assets/images/projects/automation.jpg" alt="TechLife Automation Hub" class="project-image">
+                        <h3 id="project-heading">TechLife Automation Hub 🤖</h3>
+                        <p class="project-overview-text">Project Overview: The TechLife Automation Hub is a comprehensive platform designed to revolutionize the way users interact with their computers by automating repetitive tasks. This project leverages various scripting languages such as Bash, PowerShell, Python, and AutoHotkey to provide users with a wide array of automation tools. By simplifying digital workflows, empowering users, and fostering innovation, the TechLife Automation Hub aims to transform the digital experience for tech enthusiasts.</p>
+                        <p id="project-github"><a href="https://your-github-repository-url-here" target="_blank" style="align-items: center;">View on GitHub</a></p>
+                    </div>
+                    <div id="project1-details" class="project-details">
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li><strong>Simplify Tasks:</strong> Automate repetitive tasks to enhance productivity and efficiency.</li>
+                            <li><strong>Empower Users:</strong> Provide tools that allow users to take control of their digital environment.</li>
+                            <li><strong>Innovate Together:</strong> Foster a community where tech enthusiasts can share and explore new automation techniques.</li>
+                        </ul>
+                
+                        <p><strong>Getting Started:</strong></p>
+                        <ul>
+                            <li><strong>Clone the Repository:</strong> Clone the repository to your local machine using `git clone <repository-url>`.</li>
+                            <li><strong>Explore the Directories:</strong> Find scripts that meet your automation needs.</li>
+                            <li><strong>Contribute:</strong> Share your own scripts and participate in the community.</li>
+                        </ul>
+                
+                        <p><strong>Scripts Directory:</strong></p>
+                        <ul>
+                            <li><strong>bash-scripts/:</strong> Contains Bash scripts for automating everyday tasks on Unix-based systems.</li>
+                            <li><strong>powershell-scripts/:</strong> Includes PowerShell scripts to enhance the Windows user experience.</li>
+                            <li><strong>python-scripts/:</strong> Features Python scripts for a variety of automation applications.</li>
+                            <li><strong>autohotkey-scripts/:</strong> Offers AutoHotkey scripts for automating tasks on Windows.</li>
+                        </ul>
+                
+                        <p><strong>Contribution Guidelines:</strong></p>
+                        <ul>
+                            <li><strong>Inspired to Contribute?</strong> Share your scripts with the community.</li>
+                            <li><strong>Documentation:</strong> Ensure your scripts come with clear and detailed documentation.</li>
+                            <li><strong>Best Practices:</strong> Follow coding best practices to maintain code quality.</li>
+                            <li><strong>Community Engagement:</strong> Share your ideas and feedback to help improve the project.</li>
+                        </ul>
+                
+                        <p><strong>Conclusion:</strong></p>
+                        <p>The TechLife Automation Hub is an ambitious project that aims to harness the power of automation to simplify and enhance the digital experience. By providing a platform for users to share and discover automation scripts, this project fosters a community of innovation and empowerment. Whether you are looking to automate simple tasks or explore advanced scripting capabilities, the TechLife Automation Hub offers the resources and community support you need to elevate your tech life.</p>
+                        <p>Join us on this journey to automate, innovate, and elevate our digital interactions. 🌟</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" onclick="toggleDetails('project1-details')">
+                        <img src="assets/images/projects/money.jpg" alt="Money" class="project-image">
+                        <h3 id="project-heading">UCI Adult Census Income Classification</h3>
+                        <p class="project-overview-text">Project Overview: The UCI Adult Census Income Classification project aims to predict whether an individual earns more than $50K per year based on demographic and employment data.</p>
+                        <p id="project-github"><a href="https://github.com/your-profile/project-link-1" target="_blank" style="align-items: center;">View on GitHub</a></p>
+                    </div>
+                    <div id="project1-details" class="project-details">
+                        <p><strong>Data Preprocessing and Cleaning:</strong></p>
+                        <p>The preprocessing phase is critical for ensuring the quality and suitability of the dataset for model training. Key steps include:</p>
+                        <ul>
+                            <li><strong>Data Loading and Initial Inspection:</strong> The dataset was loaded using pandas, with explicit column naming to ensure clarity. Initial inspections highlighted issues such as missing values and class imbalance.</li>
+                            <li><strong>Handling Missing Values:</strong> Features such as 'workclass', 'occupation', and 'native-country' contained missing values. Various imputation strategies were considered; however, it was found that not handling these missing values yielded better model performance, maintaining an accuracy of approximately 83%.</li>
+                            <li><strong>Encoding Categorical Variables:</strong> Categorical features were transformed into numerical representations using OrdinalEncoder, which is essential for algorithms like Random Forests that require numerical input.</li>
+                            <li><strong>Feature Engineering and Selection:</strong> Feature importance was evaluated using a RandomForestClassifier, which helped in identifying and retaining the most impactful features, thereby reducing dimensionality and improving model efficiency.</li>
+                        </ul>
+        
+                        <p><strong>Exploratory Data Analysis (EDA):</strong></p>
+                        <p>EDA provided insights into the dataset's structure and highlighted important trends:</p>
+                        <ul>
+                            <li><strong>Income Distribution:</strong> A significant imbalance was observed, with the majority of individuals earning <=50K.</li>
+                            <li><strong>Demographic Insights:</strong> Gender, race, and marital status were found to correlate with income, indicating systemic disparities.</li>
+                            <li><strong>Work and Education:</strong> Higher education levels and longer work hours were generally associated with higher income, though the relationship plateaued at extreme values.</li>
+                        </ul>
+        
+                        <p><strong>Model Training and Evaluation:</strong></p>
+                        <ul>
+                            <li><strong>Data Splitting:</strong> The dataset was split into training and testing sets (80-20 split) to evaluate model performance on unseen data.</li>
+                            <li><strong>Model Selection and Training:</strong> A RandomForestClassifier was chosen for its robustness and ability to handle various data types. The model was trained on the most important features identified during preprocessing.</li>
+                            <li><strong>Addressing Class Imbalance:</strong> The minority class (>50K) was over sampled to balance the training set, enhancing the model's ability to predict both classes accurately.</li>
+                            <li><strong>Model Evaluation:</strong> The model's performance was assessed using accuracy, precision, recall, and F1-score. The classifier achieved an accuracy of approximately 84.67%, with balanced precision and recall across both income classes, indicating robust performance.</li>
+                        </ul>
+        
+                        <p><strong>Results and Interpretation:</strong></p>
+                        <p>The final model demonstrated strong predictive capabilities, with key performance metrics as follows:</p>
+                        <ul>
+                            <li><strong>Accuracy:</strong> 84.67%</li>
+                            <li><strong>Precision, Recall, and F1-Score:</strong> Balanced metrics across both income classes, highlighting the model's effectiveness in distinguishing between different income levels.</li>
+                        </ul>
+        
+                        <p><strong>Conclusion:</strong> This project showcases the application of advanced data science techniques to solve a real-world classification problem. The systematic approach to data preprocessing, insightful exploratory analysis, and rigorous model training and evaluation underscore expertise in handling complex datasets and developing robust predictive models.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header" onclick="toggleDetails('project2-details')">
+                        <img src="assets/images/projects/certificates.jpg" alt="Certificate Viewer" class="project-image">
+                        <h3 id="project-heading">Certifications Viewer</h3>
+                        <p class="project-overview-text">Project Overview: The Certifications Viewer is a streamlined web application designed to allow users to view their certifications by entering their roll number. This application simplifies the process of accessing digital certificates, providing a user-friendly interface for students and other stakeholders.</p>
+                        <p id="project-github"><a href="https://github.com/sudoTheArkKnight/DigitCertificateDistributionSystem" target="_blank" style="align-items: center;">View on GitHub</a></p>
+                    </div>
+                    <div id="project2-details" class="project-details">
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li><strong>Roll Number Input:</strong> Users enter their roll number in an input field provided on the web page.</li>
+                            <li><strong>Form Submission:</strong> Upon submission, the application captures the roll number and redirects the user to the corresponding PDF certificate.</li>
+                            <li><strong>PDF Certificate Viewer:</strong> Certificates are stored in a designated `/certificates` folder, named after the roll number (e.g., `12345.pdf`).</li>
+                        </ul>
+                
+                        <p><strong>Technical Details:</strong></p>
+                
+                        <p><strong>HTML Structure:</strong></p>
+                        <p>The HTML file (`index.html`) is the backbone of the application, containing a simple form where users input their roll number. This form is styled with CSS to be centered on the page, providing a clean and focused user experience.</p>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+                &lt;html lang="en"&gt;
+                &lt;head&gt;
+                    &lt;meta charset="UTF-8"&gt;
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                    &lt;title&gt;Certifications&lt;/title&gt;
+                    &lt;style&gt;
+                        * { background-color: bisque; }
+                        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+                        form { display: flex; flex-direction: column; align-items: center; }
+                    &lt;/style&gt;
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;form action="/checking.js" method="get"&gt;
+                        Enter the Roll number:
+                        &lt;input type="text" name="rollno" id="rollno"&gt; &lt;br/&gt;
+                        &lt;input type="submit" name="submit" value="Submit"&gt;
+                    &lt;/form&gt;
+                    &lt;script src="checking.js"&gt;&lt;/script&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;</code></pre>
+                
+                        <p><strong>JavaScript Logic:</strong></p>
+                        <p>The JavaScript file (`checking.js`) manages the form submission, extracting the roll number and constructing the URL for the PDF certificate.</p>
+                        <pre><code>const form = document.querySelector('form');
+                const rollnoInput = document.querySelector('#rollno');
+                
+                form.addEventListener('submit', (e) => {
+                    e.preventDefault(); // prevent default form submission
+                    const rollno = rollnoInput.value.trim();
+                    const pdfUrl = `/certificates/${rollno}.pdf`; // assuming PDF files are in /certificates folder
+                    window.location.href = pdfUrl;
+                });</code></pre>
+                
+                        <p><strong>Vercel Configuration:</strong></p>
+                        <p>The `vercel.json` file configures the deployment on Vercel, mapping the `/api/checking` path to the `/api/checking.js` file for proper request handling.</p>
+                        <pre><code>{"rewrites": [{ "source": "/api/checking", "destination": "/api/checking.js" }]}</code></pre>
+                
+                        <p><strong>Installation and Deployment:</strong></p>
+                        <ul>
+                            <li><strong>Clone the Repository:</strong> Clone the repository to your local machine.</li>
+                            <li><strong>Create a Vercel Project:</strong> Create a new Vercel project and link it to your GitHub repository.</li>
+                            <li><strong>Configure `vercel.json`:</strong> Configure the `vercel.json` file to point to the correct `/api/checking.js` file.</li>
+                            <li><strong>Deploy:</strong> Deploy the application to Vercel using the `vercel build` and `vercel deploy` commands.</li>
+                        </ul>
+                
+                        <p><strong>Contributing:</strong></p>
+                        <p>Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request with your changes.</p>
+                
+                        <p><strong>License:</strong></p>
+                        <p>This project is licensed under the MIT License. See the LICENSE file for details.</p>
+                    </div>
+                </div>
+
+
+                <!-- Leanrning Pandas Project -->
+                <div class="project-card">
+                    <div class="project-header" onclick="toggleDetails('project1-details')">
+                        <img src="assets/images/projects/money.jpg" alt="Money" class="project-image">
+                        <h3 id="project-heading">🐼 Learning Pandas 🐼</h3>
+                        <p class="project-overview-text">Project Overview: Welcome to the <strong>Learning Pandas</strong> guide! This repository provides a structured approach to mastering the Pandas library, an essential tool for data manipulation and analysis in Python. Whether you're a beginner or an advanced user, these questions will help you deepen your understanding and apply your knowledge in practical scenarios.</p>
+                        <p id="project-github"><a href="https://github.com/sudoTheArkKnight/learningPandas" target="_blank" style="align-items: center;">View on GitHub</a></p>
+                    </div>
+                    <div id="project1-details" class="project-details">
+                        <p><strong>Purpose:</strong></p>
+                        <ul>
+                            <li><strong>Strengthen Your Foundation:</strong> Gain a solid grasp of Pandas fundamentals with beginner-level questions.</li>
+                            <li><strong>Advance Your Skills:</strong> Tackle intermediate and advanced questions that require a combination of techniques and in-depth knowledge.</li>
+                            <li><strong>Practice Real-World Scenarios:</strong> Apply your skills to complex, real-world data manipulation problems.</li>
+                        </ul>
+
+                        <p><strong>Getting Started:</strong></p>
+                        <p>Work through the categorized questions, starting with beginner-level and progressing to advanced. Each question challenges your understanding and helps you apply what you've learned.</p>
+                        <ul>
+                            <li><strong>Beginner Level:</strong> Focuses on basic data manipulation, such as selecting, filtering, and transforming data.</li>
+                            <li><strong>Intermediate Level:</strong> Covers more complex operations like data aggregation, merging, and reshaping.</li>
+                            <li><strong>Advanced Level:</strong> Delves into advanced data manipulation, including custom transformations and rolling statistics.</li>
+                            <li><strong>Combination Techniques:</strong> Combines multiple Pandas techniques to solve complex problems.</li>
+                        </ul>
+        
+                        <p><strong>How to use this guide?</strong></p>
+                        <ul>
+                            <li><strong>Work Through the Questions:</strong> Start with the beginner-level questions and progress to more advanced ones.</li>
+                            <li><strong>Practice on Real Data:</strong> Use sample datasets or your own data to practice the techniques described.</li>
+                            <li><strong>Check Your Understanding:</strong> Verify your solutions by comparing them with expected results or using Pandas documentation.</li>
+                            <li><strong>No Solutions Provided:</strong> The guide encourages you to figure things out on your own, reinforcing problem-solving skills.</li>
+                        </ul>
+        
+                        <p><strong>Contribution Guidelines:</strong></p>
+                        <p>The final model demonstrated strong predictive capabilities, with key performance metrics as follows:</p>
+                        <ul>
+                            <li>Feel free to contribute by adding new questions, correcting errors, or suggesting improvements. Your contributions will help others in their journey to mastering Pandas.</li>
+                            <li>This guide is open-source and available under the <a href="https://github.com/your-repository-link/LICENSE">MIT License</a>.</li>
+                        </ul>
+        
+                        <p><strong>Conclusion:</strong> This project is my attempt at creating evergreen resources for the community. Resources that will always help beginners gain some real detailed understanding of how DataFrames work and what are things we can do with them. This can also be used by veterans of the sport to sharpen their skills and back into it. I hope this helps. </p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    
+        <script src="assets/js/script1.js"></script>    
+
+        <section id="skills">
+
+            <h2 id="skills-heading">Skills and technologies</h2>
+            
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/python.jpg" alt="python" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Python</h3>
+                        <p>Proficient in Python, using it for data analysis, automation, and AI projects.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/machineLearning.jpg" alt="Skill Image 2" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Machine Learning and Data science</h3>
+                        <p>Passionate about turning data into insights, leveraging Machine Learning and Data Science to solve complex problems.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/visualisation.jpg" alt="Skill Image 3" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Data Analytics and Visualization</h3>
+                        <p>Transforming raw data into compelling visuals and meaningful insights, using Data Analytics and visualization to tell impactful stories.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/databases.jpg" alt="Skill Image 3" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Database creation and management</h3>
+                        <p>Adeptly managing and optimizing databases, using DBMS to ensure efficient data storage, retrieval, and integrity.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/cloudComputing.jpg" alt="Skill Image 3" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Cloud Computing Technologies</h3>
+                        <p>Harnessing Cloud Computing technologies to design scalable, flexible solutions and streamline operations across diverse environments.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/DevOps.jpg" alt="Skill Image 3" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>DevOps and Agile Technologies</h3>
+                        <p>Leveraging DevOps and Agile to streamline development processes, enhance collaboration, and accelerate delivery cycles.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/bigdata.jpg" alt="Skill Image 2" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Big Data analytics</h3>
+                        <p>Harnessing large-scale data sets to uncover trends and driving strategic decisions.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/automation.jpg" alt="Skill Image 2" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Automation Technologies</h3>
+                        <p>Specialization in streamlining workflows and enhancing efficiency through intelligent and scalable solutions.</p>
+                    </div>
+                </div>
+
+                <div class="skill-card">
+                    <img src="assets/images/skills/businessdevelopment.jpg" alt="Skill Image 2" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Business development</h3>
+                        <p>I drive business growth by identifying opportunities, crafting strategic plans, and fostering relationships to expand market reach and revenue.</p>
+                    </div>
+                </div>
+                
+                <div class="skill-card">
+                    <img src="assets/images/skills/management.jpg" alt="Skill Image 2" class="skill-banner">
+                    <div class="skill-content">
+                        <h3>Management</h3>
+                        <p>I excel at managing myself and others, fostering a collaborative environment that drives productivity and personal growth.</p>
+                    </div>
+                </div>
+                <!-- Add more skill cards as needed -->
+            </div>
+
+            <div class="technologies" style="margin-top: 6%;">
+                    <div class="tech-card">
+                        <h3>Machine and Deep Learning</h3>
+                        <ul>
+                            <li>Scikit-Learn</li>
+                            <li>TensorFlow</li>
+                            <li>PyTorch</li>
+                            <li>NLTK</li>
+                            <li>Kares</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>Data Processing</h3>
+                        <ul>
+                            <li>Pandas</li>
+                            <li>Numpy</li>
+                            <li>Dask</li>
+                            <li>SciPy</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>Data Visualization</h3>
+                        <ul>
+                            <li>Matplotlib</li>
+                            <li>Seaborn</li>
+                            <li>Plotly</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>Databases</h3>
+                        <ul>
+                            <li>Mongo DB</li>
+                            <li>SQL</li>
+                            <li>Oracle DB (limited)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>Big Data Tools</h3>
+                        <ul>
+                            <li>PowerBI</li>
+                            <li>Hadoop</li>
+                        </ul>
+                    </div>
+
+                    <div class="tech-card">
+                        <h3>DevOps Tools</h3>
+                        <ul>
+                            <li>Git and Github</li>
+                            <li>Docker</li>
+                            <li>Kubernetes (Limited)</li>
+                            <li>Jenkins</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="tech-card">
+                        <h3>Additional Ml Tools</h3>
+                        <ul>
+                            <li>Statistical Modeling</li>
+                            <li>Jupyter Lab</li>
+                            <li></li>
+                        </ul>
+                    </div>
+            </div>
+
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications">
+            <h2 id="cert-heading">Certifications</h2>
+            <div class="certifications-container">
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/advanced foundations for python programming.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Advanced Foundations for python programing</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/computernetworksfoundations.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Computer Networks Foundations</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/csharpbasic.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>C# basics</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/fundamentals of successful leadership.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Fundamentals of successful Leadership</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/javabasic.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Java basics</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/jsintermidiate.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>JavaScript Intermediate</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/leanringhowtolearn.jpeg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Learning how to learn</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/linuxcomandline.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Linux Command Line</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/powerbibasics.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Power BI basics</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/problemsolvingbasic.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Problem Solving Basics</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/promptengineeringforchatgpt.jpeg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Prompt Engineering for ChatGPT</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/python performance optimization.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Python Performance Optiomization</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/pythonbasic.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Python Basics</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/pythonfordsaianddevelopment.jpeg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Python for AI, Data science and Development</h3>
+                        <p>Coursera</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/sqladvanced.png" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>SQL Advanced</h3>
+                        <p>Hackerrank</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/stratigicHRM.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Stratigic HRM</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+                <div class="certification-card">
+                    <div class="certification-image-container">
+                        <img src="assets/images/certificates/VigilantLeadership.jpg" alt="Certification Image" class="certification-image">
+                    </div>
+                    <div class="certification-content">
+                        <h3>Vigilant Leadership</h3>
+                        <p>Udemy</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <section id="contact">
+            <h2 id="contact-heading">Contact and Hiring details</h2>
+            <div class="contact-cards">
+                <div class="contact-card linkedin-card">
+                    <a href="https://www.linkedin.com/in/abhishek-kumar03/" target="_blank">
+                        <p class="linkedin-text">LinkedIn</p>
+                    </a>
+                </div>
+                <div class="contact-card github-card">
+                    <a href="https://github.com/sudoTheArkKnight/" target="_blank">
+                        <p class="github-text">GitHub</p>
+                    </a>
+                </div>
+                <div class="contact-card twitter-card">
+                    <a href="https://x.com/sudothearkknigh" target="_blank">
+                        <p class="twitter-text">Twitter</p>
+                    </a>
+                </div>
+                <div class="contact-card medium-card">
+                    <a href="https://medium.com/@abhishek-kumar" target="_blank">
+                        <p class="medium-text">Medium</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        
+    </main>
+
+</body>
+</html>

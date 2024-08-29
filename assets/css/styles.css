@@ -1,0 +1,621 @@
+/* Base styles */
+/* Background image styles */
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: url('bgImage.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Header styles */
+header {
+    background: #fff;
+    padding: 1rem 0;
+    border-top: 1px solid #ddd;
+    position: fixed;
+    width: 55%;
+    bottom: 1rem;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 40px ;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly; /* Space evenly */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-family: "Kode Mono", monospace;
+    font-weight: 900;
+    font-style: normal;
+    padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+    background: #ddd;
+    border-radius: 5px;
+}
+
+/* Main content styles */
+main {
+    margin-top: 10px;
+    padding: 3%;
+    max-width: 90%;
+    margin: 3% auto 0;
+    background: rgba(0, 0, 0, 0.4); /* Transparent frosted background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 18px;
+    backdrop-filter: blur(10px); /* Add blur effect */
+    overflow: auto;
+    height: 90%;
+    max-height: 50rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+#founder{
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: #A9D9D0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#roles{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #A9D9D0;
+}
+
+/* Typography */
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+/* General Project Section styles */
+#projects {
+    padding: 2rem 0;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    display: flex;
+}
+
+#projects h2{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: #A9D9D0;
+    font-size: 2.2rem;
+}
+
+.projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.project-overview-text{
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.5); /* Transparent frosted background */
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow */
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 30%;
+    max-width: 35%;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s; /* Animation for transform and shadow */
+    text-align: left; /* Left-align text inside the card */
+}
+
+#project-github{
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #027373;
+    font-size: 1.2rem;
+}
+
+#project-heading{
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #027373;
+}
+
+.project-card .image-container {
+    width: 100%;
+    height: 200px; /* Set the height for the image container */
+    overflow: hidden; /* Hide the overflow to crop the image */
+    border-bottom: 1px solid #ddd;
+    border-radius: 8px 8px 0 0;
+}
+
+.project-card img.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.project-card h3 {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+}
+
+.project-card p,
+.project-card a {
+    color: #555;
+    line-height: 1.5;
+    text-align: left; /* Left-align paragraphs and links */
+}
+
+.project-card a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.project-card .project-details {
+    display: none;
+    margin-top: 1rem;
+}
+
+/* Hover effects and animation */
+.project-card:hover {
+    transform: translateY(-10px); /* Animation effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+.project-card.expanded .project-details {
+    display: block;
+}
+
+/* Optional: Animation for showing details */
+.project-details {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-card.expanded .project-details {
+    opacity: 1;
+}
+
+/* Skills section styles */
+#skills {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#skills-heading{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: #A9D9D0;
+    font-size: 2.2rem;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.skill-banner {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.skill-content {
+    padding: 1rem;
+}
+
+.skill-content h3 {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.skill-content p {
+    font-family: "Play", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* technologies */
+
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2%;
+}
+
+.tech-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1%;
+}
+
+.tech-card ul{
+    margin-left: 5%;
+    margin-right: 1%;
+    text-align: left;
+}
+
+.tech-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styles */
+footer {
+    background: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+/* General About Section styles */
+#about {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#about h2{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #A9D9D0;
+}
+
+/* About Card */
+.about-card {
+    background: rgba(255, 255, 255, 0.5); /* Transparent frosted background */
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 80%;
+    max-width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: auto;
+    height: auto;
+    backdrop-filter: blur(10px); /* Add blur effect */
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Hide the about details initially */
+.about-details {
+    display: none;
+}
+
+.about-card.expanded .about-details {
+    display: block;
+    text-align: left; /* Left-align the expanded content */
+}
+
+.about-card h3{
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+#introtext {
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* Banner Section styles */
+#banner {
+    /* display: flex; */
+    width: 80%;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    display: block;
+}
+
+/* General Contact Section styles */
+#contact {
+    padding: 2rem auto 0;
+    text-align: center;
+}
+
+#contact-heading{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #A9D9D0;
+}
+
+/* Container for Contact Cards */
+.contact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+/* Contact Cards */
+.contact-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 1rem;
+    width: 200px; /* Adjust the width as needed */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s
+}
+
+.contact-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* LinkedIn Card */
+.linkedin-card .linkedin-text {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color: #0077b5;
+}
+
+/* GitHub Card */
+.github-card .github-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Twitter Card */
+.twitter-card .twitter-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5rem;
+    color: #1da1f2;
+}
+
+/* Medium Card */
+.medium-card .medium-text {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: #00ab6c;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        background: none; /* Remove background image on smaller screens */
+    }
+
+    header {
+        padding: 0.5rem 0; /* Reduce padding */
+    }
+
+    nav ul {
+        flex-wrap: nowrap;
+        overflow-x: auto; /* Allow horizontal scrolling if necessary */
+        justify-content: center; /* Align items to the start */
+    }
+
+    nav ul li {
+        margin: 0 5px; /* Reduce margin between items */
+    }
+
+    main {
+        max-width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    .project-card, .about-card, .contact-card {
+        width: 100%;
+        max-width: none; /* Remove max-width */
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    .project-card img.project-image {
+        height: auto; /* Adjust image height */
+    }
+
+    .skill-card {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    #banner img {
+        height: auto; /* Maintain aspect ratio on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 0.5rem 0; /* Further reduce padding */
+    }
+
+    .project-card, .about-card, .contact-card {
+        padding: 0.5rem; /* Adjust padding */
+    }
+
+    .project-card img.project-image {
+        height: 150px; /* Adjust image height for very small screens */
+    }
+
+    .skill-card {
+        width: 100%;
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    #banner img {
+        height: 100px; /* Adjust banner image height */
+    }
+}
+
+/* Certifications Section styles */
+#certifications {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#cert-heading{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.2rem;
+    color: #A9D9D0;
+}
+
+.certifications-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+.certification-content h3{
+    font-family: "Merienda", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.certification-content p{
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.certification-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.certification-image-container {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.certification-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.certification-content {
+    padding: 1rem;
+}
